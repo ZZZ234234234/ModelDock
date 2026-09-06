@@ -13,7 +13,8 @@
     <img alt="Next.js API via Vinext" src="https://img.shields.io/badge/Next.js_API-Vinext-white?style=flat-square&labelColor=222629" />
     <img alt="Local first" src="https://img.shields.io/badge/storage-local--first-b9f36b?style=flat-square&labelColor=222629" />
   </p>
-  <p><a href="#quick-start">Quick start</a> · <a href="#supported-providers">Providers</a> · <a href="docs/local-models.md">Local models</a> · <a href="SECURITY.md">Security</a> · <a href="docs/architecture.md">Architecture</a></p>
+  <p><a href="https://modeldock.honey-chick-7267.chatgpt.site"><strong>▶ Live Demo — no API key required</strong></a></p>
+  <p><a href="#quick-start">Run locally</a> · <a href="#supported-providers">Providers</a> · <a href="docs/local-models.md">Local models</a> · <a href="SECURITY.md">Security</a> · <a href="docs/architecture.md">Architecture</a></p>
 </div>
 
 **ModelDock is an open-source AI API client and LLM playground for side-by-side model comparison, API testing, token usage and cost tracking.** Connect OpenAI, Claude, Gemini, DeepSeek, OpenRouter, Ollama, LM Studio and compatible providers in one local-first workspace.
@@ -61,6 +62,10 @@ Adapters are implemented and protocol-tested. See the [verification scope](docs/
 
 ## Quick Start
 
+Open the **[ModelDock live demo](https://modeldock.honey-chick-7267.chatgpt.site)** and choose **先体验演示 / Explore demo**. Demo data is generated locally in the browser and does not consume model API credits.
+
+To connect local models, modify the source or self-host, run the project locally:
+
 **Node.js 22.13+**. Download or clone this repository, then run from its root:
 
 ```bash
@@ -103,7 +108,7 @@ No server environment key is needed. `.env.example` explains the key handling; r
 - **Same-origin relay** is opt-in per official cloud provider. It transiently receives keys and prompts on the instance server, forwards them to a pinned official host, and does not persist them in a server database or application log.
 - Custom and localhost endpoints are direct-only. Hostname/path restrictions and redirect blocking prevent an unrestricted proxy.
 
-Use an instance you trust. Keep shared deployments private, or add authentication and rate limiting before public exposure.
+Use an instance you trust. The public demo is intended for evaluation and visitor-provided keys; add authentication and rate limiting for production or team deployments.
 
 ## Local Models
 
