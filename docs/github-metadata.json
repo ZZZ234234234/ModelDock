@@ -1,0 +1,25 @@
+{
+  "description": "Open-source AI API client & LLM playground | Compare models, tokens & costs | 多模型 API 管理与对比平台",
+  "topics": [
+    "ai",
+    "llm",
+    "llm-tools",
+    "llm-comparison",
+    "multi-model",
+    "ai-playground",
+    "api-client",
+    "api-testing",
+    "token-usage",
+    "cost-tracking",
+    "openai",
+    "claude",
+    "gemini",
+    "deepseek",
+    "openrouter",
+    "ollama",
+    "lm-studio",
+    "local-first",
+    "self-hosted",
+    "typescript"
+  ]
+}

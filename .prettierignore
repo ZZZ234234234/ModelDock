@@ -1,0 +1,8 @@
+node_modules
+dist
+.next
+.sites-runtime
+.wrangler
+components/ui
+vendor
+package-lock.json

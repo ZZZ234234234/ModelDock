@@ -1,0 +1,28 @@
+name: Bug report
+description: Report a reproducible problem without sharing credentials.
+title: "[Bug] "
+body:
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include expected and actual behavior. Never paste API keys.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Browser, OS, Node version, ModelDock version
+    validations:
+      required: true
+  - type: input
+    id: provider
+    attributes:
+      label: Provider, model and transport
+      placeholder: DeepSeek / deepseek-chat / direct
+  - type: textarea
+    id: details
+    attributes:
+      label: Sanitized error or screenshot
+      description: Remove keys, cookies and private prompt content first.
