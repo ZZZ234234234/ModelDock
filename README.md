@@ -11,7 +11,8 @@
     <img alt="TypeScript strict" src="https://img.shields.io/badge/TypeScript-strict-81b6f4?style=flat-square&labelColor=222629" />
     <img alt="Local first" src="https://img.shields.io/badge/storage-local--first-b9f36b?style=flat-square&labelColor=222629" />
   </p>
-  <p><a href="#quick-start">快速体验</a> · <a href="#features">功能</a> · <a href="#providers">支持平台</a> · <a href="docs/local-models.md">本地模型</a> · <a href="https://github.com/ZZZ234234234/ModelDock/issues">反馈问题</a></p>
+  <p><a href="https://modeldock.honey-chick-7267.chatgpt.site"><strong>▶ 在线 Demo（无需 API Key）</strong></a></p>
+  <p><a href="#quick-start">本地运行</a> · <a href="#features">功能</a> · <a href="#providers">支持平台</a> · <a href="docs/local-models.md">本地模型</a> · <a href="https://github.com/ZZZ234234234/ModelDock/issues">反馈问题</a></p>
 </div>
 
 **ModelDock 是开源的 AI API 客户端与大模型调试工作台**，支持多模型并行对比、流式聊天、API 测试、Token 用量统计和调用成本估算。连接 OpenAI、Claude、Gemini、DeepSeek、OpenRouter、Ollama、LM Studio 等平台，使用你自己的 API Key。
@@ -38,6 +39,10 @@
 
 <a id="quick-start"></a>
 ## 快速体验：不需要 API Key
+
+直接打开 **[ModelDock 在线 Demo](https://modeldock.honey-chick-7267.chatgpt.site)**，在欢迎页选择 **「先体验演示」**。演示数据由浏览器本地生成，不消耗模型 API 额度。
+
+如果你希望接入本地模型、修改源码或自行部署，再按下面的方式运行：
 
 准备 **Node.js 22.13 或以上版本**，然后执行：
 
@@ -117,7 +122,7 @@ Base URL 是请求发往的服务地址。以上适配器已实现并通过协�
 - API Key 默认只保存在内存中。可选密钥库使用 **AES-256-GCM 加密、PBKDF2-SHA-256 派生密钥**；重开页面后需要输入密码解锁。
 - 对话记录本身**未加密**，导出的备份不包含密钥库。建议使用单个活动标签页，避免多标签页覆盖更新。
 - 密钥库和剪贴板需要 HTTPS 或 localhost。解锁后的页面、恶意浏览器扩展仍可能接触明文。
-- 没有遥测分析、硬编码模型密钥、账号数据库或自动云同步。只在可信实例使用转发；公开部署前须增加身份验证与限流。
+- 没有遥测分析、硬编码模型密钥、账号数据库或自动云同步。公开 Demo 仅用于体验及使用访客自己的密钥；生产部署或团队共享时建议增加身份验证与限流。
 
 费用估算不含缓存折扣、阶梯定价、税费及工具费用；历史记录保留调用当时的价格。完整说明和漏洞反馈方式见 [SECURITY.md](SECURITY.md)。
 
